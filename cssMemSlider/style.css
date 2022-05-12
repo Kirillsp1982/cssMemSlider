@@ -93,11 +93,31 @@ main {
   border: 0.15em solid rgb(84, 138, 255);
 }
 
-#radio1:checked ~ .slider__footer .slider__label label:nth-child(1):hover .label,
-#radio2:checked ~ .slider__footer .slider__label label:nth-child(2):hover .label,
-#radio3:checked ~ .slider__footer .slider__label label:nth-child(3):hover .label,
-#radio4:checked ~ .slider__footer .slider__label label:nth-child(4):hover .label,
-#radio5:checked ~ .slider__footer .slider__label label:nth-child(5):hover .label {
+#radio1:checked
+  ~ .slider__footer
+  .slider__label
+  label:nth-child(1):hover
+  .label,
+#radio2:checked
+  ~ .slider__footer
+  .slider__label
+  label:nth-child(2):hover
+  .label,
+#radio3:checked
+  ~ .slider__footer
+  .slider__label
+  label:nth-child(3):hover
+  .label,
+#radio4:checked
+  ~ .slider__footer
+  .slider__label
+  label:nth-child(4):hover
+  .label,
+#radio5:checked
+  ~ .slider__footer
+  .slider__label
+  label:nth-child(5):hover
+  .label {
   background: inherit;
   border: 0.15em solid #fff;
 }
@@ -167,6 +187,7 @@ main {
 
   .slides__text p {
     width: 70%;
+    font-size: 1.25em;
   }
 
   .slider__label {
