@@ -27,6 +27,7 @@ main {
 .slides__img {
   display: flex;
   padding: 2em 0;
+  transition: 1s all;
 }
 
 .slides__img img {
@@ -36,8 +37,8 @@ main {
   margin: 0 auto;
 }
 
-.slider__input {
-    display: none;
+.slider input {
+  display: none;
 }
 
 .slider__label {
@@ -51,4 +52,24 @@ main {
   background: #fff;
   cursor: pointer;
   margin: 5px;
+}
+
+#radio1:checked ~ .slider__img .slides__img {
+  transform: translateX(0);
+}
+
+#radio2:checked ~ .slider__img .slides__img {
+  transform: translateX(-100%);
+}
+
+#radio3:checked ~ .slider__img .slides__img {
+  transform: translateX(-200%);
+}
+
+#radio4:checked ~ .slider__img .slides__img {
+  transform: translateX(-300%);
+}
+
+#radio5:checked ~ .slider__img .slides__img {
+  transform: translateX(-400%);
 }
